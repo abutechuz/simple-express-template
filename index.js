@@ -4,8 +4,6 @@ const { Server } = require('socket.io')
 
 const userRoutes = require('./src/modules/user/routes')
 
-/* muhammad i@Mr00Tuser */
-
 const app = express()
 
 app.use(express.json())
@@ -31,7 +29,7 @@ io.on('connection', (socket) => {
 
 app.get('/', (req, res) => {
 
-	res.send({ ok: true, })
+	res.send({ ok: true })
 })
 
 server.listen(4000, () => console.log(4000))

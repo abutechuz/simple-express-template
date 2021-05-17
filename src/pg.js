@@ -1,11 +1,11 @@
 const { Pool } = require('pg')
 
 const pool = new Pool({
-	host: 'localhost',
-	user: 'muhammad',
-	password: 'math',
-	database: 'pro',
-	port: 5432,
+	host: 'YOUR_HOST',
+	user: 'YOUR_USERNAME',
+	password: 'YOUR_PASSWORD',
+	database: 'YOUR_DATABASE',
+	port: 'YOUR_PORT',
 })
 
 const row = async (SQL, ...params) => {

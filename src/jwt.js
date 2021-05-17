@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 
-const SECRET = 'SECRET'
+const SECRET = 'YOUR_SECRET_KEY'
 
 const sign = payload => jwt.sign(payload, SECRET, {
 	expiresIn: 60 * 5, // minutes
